@@ -1,0 +1,201 @@
+.div2{
+    height:500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about h1{
+    height:1200px;
+    display:flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.services h1{
+    height:500px;
+    display:flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.contact h1{
+    height:500px;
+    display:flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+body{
+    background:linear-gradient(rgb(45, 45, 82),rgb(8, 17, 1));
+    color:bisque;
+    overflow-x: hidden;
+}
+
+
+.form{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ background-color:rgb(14, 13, 15) ;
+    border-radius: 5px;
+    width:80%;
+    margin: auto;
+    border:3px solid rgb(14, 14, 22);
+    margin-bottom: 20px;
+    box-shadow: 5px -5px rgba(0, 0, 255, 0.432);
+    /* color:white !important; */
+    /* box-shadow: 2px 2px whitesmoke; */
+ /* height:600px; */
+}
+
+.box01{
+    display:flex;
+    justify-content: space-between;
+}
+input{
+    margin:13px;
+    /* background-color:rgba(0, 0, 0, 0.349); */
+    /* color:black; */
+    padding:10px 15px;
+    border:1px solid black;
+    border-radius: 9px;
+
+}
+
+
+.form:hover{
+/* border:3px solid rgb(88, 88, 179); */
+box-shadow:-5px 5px rgba(0, 0, 255, 0.473);
+}
+
+
+input::placeholder {
+    color: rgb(49, 45, 45);
+    /* font-size: 1.2em; */
+    /* font-style: italic; */
+    
+  }
+
+
+  .dob{
+    padding-left: 13px;
+    font-weight: 500;
+  }
+
+  .gender{
+    padding-left: 13px;
+    font-weight: 500;
+    color:rgb(247, 241, 241);
+  }
+
+
+.login{
+    /* display:flex; */
+ /* justify-content: center; */
+ text-align: center;
+ align-items: center;
+ background-color:whitesmoke ;
+    border-radius: 5px;
+    width:30%;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+    /* height:70vh; */
+
+  }
+
+  .box1{
+    height:68vh;
+  }
+
+  .log::after {
+  content: "";
+  width: 5%;
+  height: 4px;
+  background-color: orange; 
+  position: absolute;
+  bottom: 330px;
+  /* right:100px; */
+  text-align: center;
+  
+}
+
+.loginbutton{
+  padding:8px 140px;
+  background-color: orange;
+  border: none;
+}
+  
+.registernow{
+  background-color: blue;
+  color: antiquewhite;
+  border:none;
+  border-radius: 5px;
+}
+
+
+.state{
+  margin-left:15px ;
+  font-weight: 500;
+}
+
+.pincode{
+  margin-left:15px ;
+  font-weight: 500;
+}
+
+.address{
+  margin-left:15px ;
+  font-weight: 500;
+}
+
+
+
+.usernamepassword{
+  text-align: center !important;
+}
+
+.main table tr td{
+  border:1px solid white;
+  padding:10px;
+  
+}
+
+.welcome{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome h1{
+/* text-align: center; */
+animation-name: ani;
+animation-duration: 0.5s;
+
+}
+
+@keyframes ani {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.links li a{
+  color:white !important;
+}

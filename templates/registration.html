@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'navbar.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    
+    {% block content %}
+
+    <div class="row fw-bold text-light bg-dark text-center">
+    
+        <div class="col-3">
+          <h5 class="pt-2"> PROJECT1</h5>
+        </div>
+        <div class="col-9">
+          <ul class="links">
+              <li class="list-inline-item text-light pt-2 pe-2 pe-4">
+               <a href="/home" class="text-decoration-none">HOME</a>
+              </li>
+              <li class="list-inline-item text-light pt-2 pe-4">
+                  <a href="/about" class="text-decoration-none">ABOUT</a>
+              </li>
+              <li class="list-inline-item text-light pt-2 pe-4">
+                  <a href="/services" class="text-decoration-none">SERVICES</a>
+              </li>
+              <li class="list-inline-item text-light pt-2 pe-4">
+                  <a href="/contact" class="text-decoration-none">CONTACT</a>
+              </li>
+              <li class="list-inline-item text-light pt-2 pe-4">
+                  <a href="/registration" class="text-decoration-none">REGISTRATION FORM</a>
+              </li>
+  
+              <li class="list-inline-item text-light pt-2 pe-4">
+                  <a href="/viewRegistration" class="text-decoration-none">VIEW REGISTRATIONS</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+  
+      
+    <div class="mt-5">
+    <div class="form">
+        <form method="POST" action="{% url 'home' %}">{%csrf_token %}
+            <div class="box01">
+            <div class="box1">    
+            <input type="text" placeholder="Enter Your First Name" name="firstname"><br>
+            <input type="text" placeholder="Enter Your Mail Id" name="email"><br>
+           
+           <label class="dob">DOB</label><input type="date" placeholder="date" name="date"><br><br>
+           <div class="state">
+            <p >SELECT YOUR STATE</p>
+                <select name="select">
+                    <option>
+                        SELECT
+                    </option>
+                <option>
+                   Telangana
+                </option>
+                <option>
+                    Andhra Pradesh
+                </option>
+                <option>
+                    Maharastra
+                </option>
+                <option>
+                    Karnataka
+                </option>
+                <option>
+                    Delhi
+                </option>
+            </select>
+            </div>
+            <br>
+            <div class="pincode">
+                <p>ENTER YOUR AREA<br>PINCODE</p>
+            </div>
+            <input type="text" name="pincode" placeholder="Enter Pincode">
+            </div>
+            
+            <div class="box2">
+                <input type="text" placeholder="Enter Your Second Name" name="secondname"><br><br>
+                <p class="gender">Select Gender</p>
+                <input type="radio" name="options" value="male"><label>Male</label>
+                <input type="radio" name="options" value="female"><label>Female</label>
+                <br><br>
+                <div class="address">
+                    <p>Enter Your Address</p>
+                <textarea name="adddress" cols="24" rows="4" placeholder="Enter Complete Address With Hno And Plot No" name="address"></textarea>
+                </div> 
+                
+            </div>
+            </div>
+            <div class="usernamepassword mt-5">
+                <h3>Confidential Details</h3>
+               <input type="text" name="username" placeholder="Set Username"><br>
+               <input type="password" name="password" placeholder="Set Password">
+            </div> 
+            
+          <div class="checkbox mt-5"><input type="checkbox" name="checkbox"><label class="mx-auto fw-bold">HereBy I Agree That All The Details That Was Provided By Me <br>Are True And I'm responsible If Any Wrong Info Provided</label>
+          </div>
+            <input type="submit" value="Register Now" class="registernow">
+        </form>
+        
+    </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

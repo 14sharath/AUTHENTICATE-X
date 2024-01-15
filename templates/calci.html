@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="{% static 'calci.css'%}">
+</head>
+<body>
+     <div class="box">
+		<div class="b0">
+		<input type="text" id="display" class="a1" placeholder="0">
+	    </div>
+	    <div class="b1">
+	    <button class="btn" id="button">AC</button>
+	    <button class="btn" id="button">DEL</button>
+	    <button class="btn" id="button">.</button>
+	    <button class="btn" id="button">/</button>	
+	    </div>
+	    <div class="b2">	
+        <button class="btn" id="button">7</button>
+        <button class="btn" id="button">8</button>
+        <button class="btn" id="button">9</button>
+        <button class="btn" id="button">+</button>
+	    </div>
+	    <div class="b3">	
+	    <button class="btn" id="button">4</button>
+	    <button class="btn" id="button">5</button>
+	    <button class="btn" id="button">6</button>
+	    <button class="btn" id="button">-</button>
+	    </div>
+	    <div class="b4">	
+	    <button class="btn" id="button">1</button>
+        <button class="btn" id="button">2</button>
+        <button class="btn" id="button">3</button>
+        <button class="btn" id="button">*</button>
+	    </div>
+	    <div class="b5">	
+	    <button class="btn" id="button">00</button>
+        <button class="btn" id="button">0</button>
+        <button class="btn" id="button">%</button>
+        <button class="btn" id="button">=</button>
+	    </div>
+	</div>
+	<script src="{%static 'calci.js'%}"></script>
+</body>
+</html>
